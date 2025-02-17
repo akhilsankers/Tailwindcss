@@ -23,6 +23,8 @@
 
 <body>
     <header>
+
+
         <nav class="flex justify-between  p-5 bg-black text-white drop-shadow-2xl">
 
             <h1 class="text-2xl text-shadow-3xl"><i class="fa-solid fa-music fa-beat-fade"></i> Music wave</h1>
@@ -46,8 +48,43 @@
                     background-image: url('https://t4.ftcdn.net/jpg/03/36/93/81/360_F_336938101_nZvmH1V72OWj2zdYFypvKPvBJsMSOwK1.jpg');
                     height: 500px;
                 }
+
+                /* Apply animation to the h1 */
+                .hero-text h1 {
+                    animation: wave 2s ease-in-out infinite;
+                }
+
+                /* Apply animation to the p tag */
+                .hero-text p {
+                    animation: wave 2s ease-in-out infinite ;
+                }
+
+                /* Wave animation keyframes */
+                @keyframes wave {
+                    0% {
+                        transform: translateY(0);
+                    }
+                    
+
+                    25% {
+                        transform: translateY(-10px);
+                    }
+
+                    50% {
+                        transform: translateY(0);
+                    }
+
+                    75% {
+                        transform: translateY(10px);
+                    }
+
+                    100% {
+                        transform: translateY(0);
+                    }
+                }
             </style>
-            <div class="hero-text text-center text-white opacity-60 pt-20">
+            <div class="hero-text text-center text-white opacity-80 pt-20">
+
                 <h1 class="text-4xl">LISTEN TO THE WORLD OF RHYTHM</h1>
                 <p class="text-xl mt-4">Experience the best music from around the globe.</p>
                 <a href="#booking"
@@ -61,25 +98,23 @@
         <div class=" drop-shadow-4xl">
             <div class="flex ">
                 <div class="w-1/2 text-center">
-                    <p class="text-justify  mt-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
-                        corrupti
-                        officiis et atque, sed
-                        repellendus fugiat, veritatis optio temporibus tenetur soluta molestiae deleniti commodi nihil
-                        reiciendis iusto perspiciatis, adipisci quisquam?
-                        Quas assumenda ducimus ea quibusdam at error natus odio a quasi illum. Eius autem impedit in
-                        minus
-                        a!
-                        Quia doloremque quas quod fugiat esse error repellat ipsa harum voluptatum quasi.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla suscipit placeat temporibus, nam
-                        quia
-                        odit veniam dolore nisi qui cupiditate sapiente? Commodi reprehenderit incidunt mollitia
-                        dignissimos
-                        inventore nam? Nulla, esse?
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, molestias explicabo esse
-                        animi
-                        qui dolore. Tempora id alias error magnam voluptas facere! Voluptates, repellat rerum? Nulla
-                        quis
-                        ipsa inventore quaerat?</p>
+                    <p class="text-justify  mt-10">Welcome to Music wave, your one-stop destination for high-quality
+                        musical instruments, accessories, and resources. Whether you're a beginner picking up an
+                        instrument for the first time or an experienced musician looking to expand your collection, we
+                        have something for everyone.
+
+                        At [Website Name], we believe that music is a universal language, and we’re dedicated to
+                        providing musicians of all levels with the tools they need to express themselves. Our wide
+                        selection of instruments, from guitars and keyboards to drums and wind instruments, comes from
+                        trusted brands known for their craftsmanship and quality.
+
+                        What sets us apart is our commitment to making music accessible. We offer detailed product
+                        descriptions, expert advice, and a community of musicians who share their knowledge and passion.
+                        Additionally, our easy-to-navigate online store allows you to shop with confidence, whether
+                        you're browsing our inventory or looking for personalized recommendations.
+
+                        Join us and embark on a musical journey. Your perfect instrument is just a click away at Music
+                        wave.</p>
                 </div>
                 <div class="w-1/2">
                     <img src="https://img.freepik.com/free-vector/indian-musical-instrument-illustration_96037-403.jpg?semt=ais_hybrid"
@@ -101,22 +136,49 @@
     </section>
 
     <section id="classes">
-        <div class="mt-6 " style="width: 60%; margin-left: 20%;">
+
+
+
+
+        <div class="mt-6 " style="width: 100%; ">
             <h1 class="text-5xl text-center"> Our Classes </h1>
             <div class="grid grid-flow-col grid-rows-2 gap-4 m-6  text-center">
                 <div class="border p-5 rounded-[1vw] m-6 bg-gray-300 drop-shadow-2xl music">
+                    <!-- Modal toggle -->
+                    <a data-modal-target="modal-1" data-modal-toggle="modal-1">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="Class Image" class="rounded-full w-20 h-20 mx-auto mb-4">
+                    </a>
                     <h2 class="text-2xl">Guitar Classes</h2>
                     <p class="mt-2">Learn to play the guitar with our expert instructors. Suitable for all levels.</p>
+
                 </div>
                 <div class="border p-5 rounded-[1vw] m-6 bg-gray-300 drop-shadow-2xl music">
+                    <!-- Modal toggle -->
+                    <a data-modal-target="modal-2" data-modal-toggle="modal-2">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEBUQEhIVFRUWFhoYGBUYFxgaGBcYGRoaFhcZGhwYHyghGR8mIB0VIjEhJSkrLi8uGCAzODMsNygtLisBCgoKDg0OFRAQGisfHx0tLSstLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0rKy4tLS0tLS0tKystLS0tLf/AABEIANwA5QMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABgcBBQIDBAj/xABBEAACAQMBBQYDBQcBBwUAAAABAgMABBEhBQYSMUEHEyJRYXEyQoEUI1JikTNDcoKSobFTFWNzosHR8CSTssLh/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAECAwT/xAAeEQEBAQEAAgIDAAAAAAAAAAAAARECITESUQNBcf/aAAwDAQACEQMRAD8AvGlKUClKUClKUClKUClKUClKUClaPb291jZ6XFwitz7sHikP8i5bHrjFQDaPa5NMxh2bZM7dGkBY88Z7uI8vUsMdRQW2aim3e0TZ1rlWnEjjTu4fvGyOhI8Kn+Iiq2vtk7TvCP8Aad8sCOcdyWBJycY7mIhT7sSR1rEvZXdfaDHbhTCAuJ5GCjX4lwuWJHsBqNauD2bZ7YbmTK2lusS9HlPG+P4RhVP1YVqtzd5bt9q20tzdSyBn7sqWxH94Cg8Awo8RU5AHIVI9odlCQ2FxI08ktwsEjRhAI0DqpZcDJY6jGrY9KrSzuSvdzpzHDIvuMMP74oPqalcIJQ6q66hgCD6EZFc6gUpSgUpSgUrxbR2vb2+O/niizy43Vc+2TXsVgRkHIPI+dBmlKUClKUClKUClKUClKUClK0u9+8SbPtWu5I5JFUqvCnDnLHhUniIwMkDPqNKDdV49qbVgtk7y4mjiXzdgoPoM8z6CqO232q7SucrAqWkZ6jxyf1MMD6KD61EoLCW6m1766nPP45HweWeZC+pOKuC29u9stsngs4XuG5BmzHHknGmRxk+nCM+dR67udu368c8wsoD69wMfqZSfRiAa9G6vZxdxSxXswjhEBMgizxyN4SCDweFTg6HibXoK3W8cPBck8KsXUMpfjkxjwkJGNByJz+YVrjnbiW5NRfZe6NjGeI95ePqSf2UGepJ+Jv1Oa3KX5C91ERGg/dWiBV5fNKeXvpXVcpxHErcRzoreJvQCKM4HT4jXakeCqsFVtAFb71xrpwwRjhX3PKu84kcp1104WkbtxGJQufidRxsfPjmkwo/lJqzdhXHHGGyDxKDkHIyNDgjnrVdTSDPjPFw5yJMSsAOohixHHjHzcqlm5t9xpjiJ4WwclCcMMjPAAq658PTFY/LPDtOciVsoIIOoOhr5bNqYWktzzhlki/8AbcqP7AV9S18+9oVj3W17tcYEndzL6h0Ct/zo/wCtcYLh7PrvvdmWzfhjEZzzzETHr/TUhqv+xq74rSWEnWOXIHkrqCP7h6nN5eRwoZJXWNBzZ2CqPqag76VXW3+1m2iytqjTt+I5SMfUjib6DB86rna++l1dki5kYxEEd1Ee7QZ64GS+NThydasguHb3aBY2xKCQzy8u6h8Zz5Ejwg+mc+lVrvN2lX8pMceLVPJCGk1GcNJ8p5aKFIqFyXxAITEa+SZH6sSWPtk112kU9wCtvHJOEGSsYzwgHyGpOp0AJq5IOp534i5YuSctxElifPiOv61Jtzd/J7U8MUnHGOdvJyHnw9UP8OnmDUQCsGIbUg6oAceoZfDIp5ZxUig2xs2ZAlzs7uiq4+0WTEFQPmeJ9Tjnls0Xwuvd7tBs7nCs3cSH5JCApP5X5H2OCfKpbVET9ndz3Sz2UyXcLDiVW+7lx5Anwseecla6tlb0bR2awiYSIo/cTqeH+Qn/AOjcPvTEX5SoxudvnFfo/gMTx8PGrEEeLOCp6jwtzAOnLlSsiT0pSgUpSgUpSgVr94NlrdWs1s2gljZc/hJHhYeoOD9K2FKD5YEbDKsOFlJVl/CynhZfoQR9Kvfsquo32aioiI0ZMbhVAyw1DHHMlSpJPMk1WvaZsr7PtOQgYSdROvlxHwSj+oBj/wAWtx2P7U7u7e3J8My6fxx5YY91L/0iqLiqD73W2IlbOO7bhOXKAqdAWI1I0BwPxVOK0227biEiAkF0yCvxcS6ZGeWPu6vNyypZsxXAhYLqwiQnTH3KsOnxAySHOOld62Yji18MbYyXZokbOmQoPeyadCRXdbliSYlVW04mT76b1DzPiNDy5E15BGGkPAO8c6EoeNh6GZ9FPogHWvVmt8844ySoqgIpcdO8BjiPlwxL45fPLZ963m6N44nMbt8SeFcKoBXXwoNQNW1OvKtNeIsALXE6W+fkTLzMPU6u3vpUZ2hv/Bbki1iw2v3kmHl65wo8K+5J51O+uJzZq2tzvf2lXglkgRktgjsh4BxynhYrnicYUHHIJkZ+Kq5vdssWLsWZjzkkYsx92ckn2zWr2htiWeR5MeJ2LMxwWJPM8sD2xXnisnc5OWPnXmYSPdvfu7tHcWzDMvCGLKCBwk4IB6jiby59a9O1Npz3L95cSvI3QsdB/COS+wArQQWaIwBOX6Io4mJ6AAVsbV+M8T5SL5nQLJKgHPMfECPrpT0sjDsBz/v/ANq6Gd2PCqEEYJD+FsHUEIcFhUrtt04pQXsJor/rwMzQ3kePw6gNzPpy0NZt7u9mk+xyRfa2UE/ZbxeG4Ude6lPCwOA2MEaDQGmnhoNky2eSt3DLcDo8UndvH+bumGp98j3rdRbvC8zJs6dLlkHEY3H2e8QDAHiGFkxoOInyGKltj2WRT91cHvEjb9pazhuOPoQkg4WGMaZGuQT5VPdhbqWtoEKLxOgKiZgveFTnRmUDixk4znnQ3Vc7tbpXl1wm/QTQhmR0uFZLqLGMGObAZ19mxoNOtTrYO4dnaMHVS7qxZJHI7xQfl4kALr6Nkf3J3O1NsQ26d5NIsa6ascZz0A5k+gqtN5O1kapZx55jvZBge6pz/qx7VNFnXl7FBGWdkjRRqSQqjrVP9qG/cV1EtrbcTBZVdpCOFSFyOFQfEdSNSBy61FOK/wBqT4He3EnkPhTP6JEP0FWDuz2NfDJfy569xETj2aTQ+WigYx8Rojx9j+wzcrcys7IgaNF4erAMzA+waP8AWlXFs6wigjEUMaxovJVAA9TpzJ6nmaVB6aUpQKUpQKUpQKUpQV/2y7K7yzS6UeK2ky3n3UmEk+gPdufRDVW7NumgmSZPijYMByyVOcH0PI+hr6J2jZJPDJBIMpIjIw/KwKn/ADXzTPJ3BaGU/eRM0b+rIShPscZz61YL72jvxYwxq5l4yyhljTxOQwyMgaLp+IioYvaf3t/BG6Rw27syFmbLglSULHRVUkKMYOpGulVPcX54c5Eankep9vP6A1qJb9c/doWP4m/6D/ufpTBdO3N4LCMtxytc4YlY1I7pBnIBOiEDl8xqD7c7S5WBSDES4xwxaHHkZDqf5cVDDBNMcuSf8fQchWztthhRxOQo820rdtvsttaya7mlJySM6nGcn3PM13WmxmOuMDzPKtpBNHxiOFVLHk8rCOLrrxNgYyOZx71trbY8MpaC/uZrO40KB4wbcg+ZUnIPRvh8i1ZX4/aPBYIyBxcZOgxoufLi5f3qSXO6F8sS3Dx8dsy5LWbpI6eWcZDY0JwcY5kU2vsWez1eMRI/72H7yzmHTiXUA6ny9F616t1NmbQE6G0L2zSKWjccbWs2M6HRgvIjxZwcAhc0PDw7Kkg7ru3tYbyLn3kYMV6nLU4J4wPIca6atXsXdJr2M3Oz5jdKuhV8R3UeRoOLPBJ83iBHIgCrVbcmG6SK4uoRBeDDPJAwUl1I8WmVbOAckEjzqTQWUMTvIkaI7442VVDOehYga0ParN3eyYnElxIRlVdHTMc8T5BKsuCrDnls50GMVa3cJ4S4DMgwHYLxZ5EjTQn0xWp29vXa2i5mlCk5wg8Ttg40Ua/Xl61Vm8narPICtqncrgeNsNIca6c1X/m9xUFtbb3gt7VOOaVU0OAT4mx+FRq30FVnvH2sOxKWcfCM/tZMFuWPCnIe5J9qqptpPNcDvZMs7BTJI+gJOMu7cgPXlVy7kdl9pJGtzPcpdg8lgf7nI5guPE+D/D5EGiK4tLO+2lMeBZbiTkWJyEHkzN4UHpkegqyt2ex1FxJfS94f9GIkJ7M+jN9OH3NWhZWccKCKKNY0XkqKFUfQV300ebZ9hFBGIoY0jQclRQo98Dr616aUqBSlKBSlKBSlKBSlazbG37a1GZ5lU9F5ufZRqffGKDZ11zzqil3ZVUalmIAHuToKrTbfaexytrEEH+pLqfooOB7kn2qDbT2nPctxTyvIenEdB/Co8K/QCtTkWjtztKtYsrApnfzHhj/qIyfoCPWqP342jNd3JuikaOf9JSucaAvknibGBxeg9K2gjJ5DNa+8vII88TGRhzSPXH8R5D9auSCP22yJJGy2WY8zqSfc1txs2C3AMzqpPy82P0FeyCaZwsjgw2jMFaSDgkePOmH8Q4G5HDcJwcji5VMINw4wv2zZU0d4pGJIbhY3ZsjxDxAYJ008LDox5VN+lxFGtLvuPtNvZuLfrPgMcdWC55c9T4fate1iusju9wo1E8ZIeIYP7SF9OHl1UZxhzyMr2I00dwV2e0lrc5PFZSEmOQgZIQv1wPhkAPk5qT2m6y7Sia4MD7PvY3KsVRlRmx8QU455OqnPmWBGX9N+kdst8Q0Ag2jbx3lqugniUJJFnQZC8PAenyZ1wWrbT7iSd0j2Lrd2cmHFtMQCA2pKMccDa/EvAwxrmpnu/uRb27rOQO+MfBKU8MUufiLR8tcAnGATripBGI4k4I1VVUaIoAUczoBoOtEaHdXc9LLvUWV5IJQD3EgDcB1yM8mGuMY6DJNb6ztooEEUSJGgzhEUKMnU6CoxvHv/AGlqWQv3kgx93HhiPMM3JT6E59KrDeDtFvLnKxt3EedFjJ4+WNZOfn8IXn1qC2t499LW0GJJBx8JIiTxP6ZHy511bA0qr94u066nLLAO4jPUayHH5uS9OQz61BZH04mOnPPn1J9fepztfdiDZ2ylvLkM93OoWGFtEiZxniZR8TIup4srxYGOtMEKVXlkA1eSRgBk5Z3YhRqdWJJA+tXRuv2RW8WJLx+/fn3YysQPr8z/AFwD+Gov2E7rd5M20JQSsXhjzrmUjU68+FT+r/lq9KCE769mtnfQ8KRpbzKoEcqIAAByVlXAZenp0qMdk24u0LC9kafCQhCp4ZAyTsccJCjXCgE8TAHUAczVu0qBSlKBSlKBSlKBSvBtjbVvaR95cTJEvTiOrHyUDVj6AE1Xe1u2BDlbSAk64km8K+4RTkj3Kn0pgtJmAGScAcyeQqI7b7RLKDKoxncdI9V+r/D+mT6VUO2t4rm6ObiZnGdE+GMeXhGn1OT61rQeLQZ5fL/3PL6A/StfETHbnaHeT+FGFuh+WP4z7vzz/Dw1FHlbOTzJ1LZ4/fB1/qwDnnXmZI4sNM4TTAGSXPXnqx+mntXoEd08RmtbN+5XUzMpwAfmCjmOpIyANa1shJa5d2QCztwjmWYjQeQ5AfXPvXUt0SGFtBLclBliqsUQdScA6V3xbvrj7VOxv4QuZFVmjeAkYJKryUaEOMrzyB1ku728MtgnHan7TZjVkICyw/xheX8Yyp1yAdKm1ckRu12NcXEYn71Z4xkyWkDFZVUdQCMyDHVeLGR64kezdjbPucNsqZrK7Vf2Lu3DIMYOCc8QONfiB+Zdc1IZtg2u1I/t2zpO4nDHIGVXvPiIYL+zbUHjXzyQxrz2W4ct5Gz3im1u0l8NxHwffKPhd1Q4LafF4ScKdeVQtQv/AGbLHdCAr9ju28ABAFvPnkpGqqG0Hh4oycABdalG6u5d5xLdR8VhPHJh4mGYZVBBJUKdAdQVGVOBw8I5Wo1qhCd4quU1DOqkhsYLDTwk68vOuFxfqozkY1yScAYBJOfpU1HG62TbySJNJCjyR6o7KOJcajB588H3Ga75LkDrn19qr3eLtPt4vDD9+4J5HEY5geP5unwg+4qsd4N7rq7yJZMJknu18Ka55jm3P5ifpQWzt/tJtYNFbv3xqsZHCD5M/LzGBkjyqsNv783l1lS/dx4wUjyoI/Mfibr5D0puzuHfX2GSPu4j++lyq4/KMcT+mBjTmKtvdjstsrXDyj7TKNeKQDgB/LHy/q4iPOgp/dncu9vsGGLhi/1n8MePy6Zf+UH6VY43CsNlWr3t3/6p41yFYYiLnRFEevFkkDxFh1wMVaQHSqP7bN5u+uFsYiSsBywGvFMw0AHXhU406uw5ig1XZxsR9pbUM0w4o4m76U4wrOTlEx0BYE45cMZHUV59/dqybW2qIoPGit3EAz4Tr4n9Ax1J/AgPSpdtY/7E2Gloul3d5MhB1XIHenP5V4YwR1IPnXHsL3a1faUi6DMcP+JHH/wH89BaG7mxo7O1itY/hjXBOMFmOrufVmJP1rZUpUClKUClKUClKUClKUHzLvvaS/bbh3d3ZJHVuNixChjwsueSYweEaLnTT4dLAasXtbsXgv8A7QAQkwVg3TiVeBhnz0B/mqA3NoOHvY/h5sv4fMj8vmOnty1B6DeKq6h2JOAqDJJPKttutse52k5jjkjtQCQeI5l0yG4V6kY1Gh0rQ2V60brIjFWUgqwOCCORqxLBodrDiRlttoqAeIeFLjh6nHJtOY1GM4YDAt1ZZP08Mu5abMkY3kAvLeTwiYlg65PQ58D8ufPAwQSQNpY7QuNnr9otJPtVj8yn4oupEg/dn8wHCeZHKpJuftu5lll2btC3bjRM8bISkicmDnBQ9MNnxajmNfZsjcmO1vWuoZnWNk4WtyAVPX4ic4B1AxkajODis+jbUefYcN/ENo7KfuJcnKfCvGNGGB+zb/lYH82a7tgbiOWt72TNncqczRR8DRy6EEgA8MZYcwMgZbA+aptaWVvaowijjiUksyooXJ6nA515Nq7wxQLxSOsafjcgeQwM8zroOdNMenZ2yLa1LtDDHEZDl+EY4iM49uZ0Gmp01rF9tiONeNmVVHNnIVRgE659qqzeDtTHw2ylmxgySA8PL5U0Y6458PLrVdbV2zPctxTSs5zkAnRSSfhUeFTrjQZ96C094u1KJPDbqZmBPjbKx9QMfM3Q6AD1qtdu7y3N1rPKSuchPhjXroo0+rZI86kG7HZhf3eHdfs0R+eUHjI/LFox/mK1bu63Z5Y2OHWPvZRr30uGYH8g+FPcDPqaI+Y9oQTxnidHXP4gR0B5HXkQfYg1d/ZJs7Ys68cPFNcpqy3KqHX8yRglMZ+YcRHU1M999zYdowlWAWXGFk88HIVscxnUeRJ6Eg0Lb2M2x9pRPNGxMMgbAPCXXBGh5agn0Oo88B9Q0rX7C2zDeQLcW78SN+qnqrD5WHlWwqDR76bfFjZSXJwWA4Y1PzSNoo9up9FNU72TbBN5fNfTniitm7xmbGHnPiBJ9NZCfMJ51nte3ia8vls4MssLd0qr+8nYhWxrqQcIM8jxedbjfaVdkbHh2TEw76cEzMOqn9qfZjiMA/KD5VRFtv3sm2trhIieF3EcWmiQrklyPbjc/p5V9CbLsI7eGO3iGEjUIo9AMa+Z6k9TVa9h27PdwttGRfHMCkWekQPib+ZgPoinrVqUClKVApSlApSlApSlApSlB4Nt7Ihu4Gt514kb9VPRlPQjzqgd5d3ptmXPA+WjY5jlGgdR/hh1Ht0Ir6Nrwbb2PDdwtBOvEjfRlPRlPysPOg+ZtobOAzLGNObIOg6sv5fMfLzHh+HotLgowZWKspBBBwQRqCCORqZbxbvy2E3dPkqdYpRoGA/ww0yOnsQahd6/DO64CDAYcOmQRgn8uudFwNfLAGtF1bidoAuMWt1pOFyrD94AM5IHwtjJ8jg8uVbnb290NujNJIseOWTl3IAbCqNSceQNfO8G1TCweAlXUkhwBoSCpPiBBOCeh5155JZJpMkvJI5x8zu58hzZuulQWHvD2ouxZbVMZ07yTVuuoXOBz5sf5ar+7vpZ3DSu8jnCrxEsdcAKo6Z00UD2qebrdkV5cYe5P2WP8JAaYj0XknuxyPw1b27O5dlYDMEI7zGDM/ilPn4j8IPkuB6UFN7rdlN7dYeYfZYjr4xmVh6R6cPX4iCPI1b2624VjYYaKLjlH76TDSfTTCfygVJ6VApSlArR72bsQX8PdSjDD4JAPEp/6jzHsRggEbylB87xvfbv3pwOJG+JST3cyZ8wNGHR8aeXNasjePtKt12Q19bv94/3UaHHGkzDk69OEZbyIAwdRUu2/sOC8hMM65B5H5lPmp/8B618u7esoo7iWFHEio7Kr4xxcJxkZ6Zz5+55middjGxVaSXatycRWytws3Lj4eJ3JPPgQ5z5v5itJCJdu7ZyeJVlb6xW6f4IGPTjk9a2+8W9VsNi22zrLiAYf+oyMMCp4mBI0Jd/FkaYGOuKk/YJaxCGeThPfMV8RHhMWWVeD+dZQeWqgdKC07aBY0WNFCoihVUclVRgAegGK7KUqBSuJauOaDnmsZrjms5oM5rNcayKDlSlKBSlKBSlKDw7a2TFdQtBMuVPXqp6Mp6Ef/nIkV89b+7m3UF1HCsMk3FkRvHGzBxkY+EHhI6g8vbWvpOlBQW7XY3eTYe7dbZOqDDykfQ8Ce5LY6iri3c3Ts7FcW0KqxGDIfFI3u7a49OXpW7pQKUpQKUpQKUpQKUoTQQztV3n+w2JCNiafMcfmunjk/lHX8TLVb9l+7Fuba52pfIDbpGyRgj8P7R1H4hgIuNclx5Vrd7tpSba2usNucoW7mE8wEBJeXnqDhn8+FQOYqQdre1Y7aGDY1tpHCitL9BmNWPU/vG9Spqir5jxPwqp8R8K5zzOi50z010q8uxqS3igkg7+Jp0k7t1D9cs44cnDasy8S8+7HlgdG4PZrDHbLcXas8kqhjCcAICGwuQA4JVhxDiAzoc4qn9p7Dlt7hw0XdOjZAGcAg84z189NR6aUH1gWriWqJbjb7Q7Rjxok6jMkWfpxpn4l/uM4PQmVg1BmlKUClYrBNBzzWRXVxVzU0HYKzXEVyoFKUoFKUoFKUoFKUoFKUoFKUoFKUoFV/2y7zfZbH7PG2JrnKDB1WMftW/QhR6vnpU9lkCgsxAABJJ5ADUk184bQuJNu7ZwhIR24U/3dumTx4I0JHE2D8zgeVBJuy6yj2fYz7buV+UpCvIkZ4dM9XfhQei55GtF2fbJk2ptNri48So3fzHozE5ROegLDl+FGFe/tg2yveQ7KthiG1VQVXXx8PCiac+BP1L+Yqy+z/d0WFkkRH3r+OU/nIHh9lGF+hPWqJMzVot5d3IbyMq48XRuoNbqlQfPO8OwbrZ1ws0bMjK2UmXz9emTywdGyQfzWt2eb+x7QTupMR3SDLJ8rgc3jz0815r6jBqS7S2dHOhjkUMD51S2+u4s9nILq0ZhwNxKynDIRywf/PLlyovoGhNVz2bdpKXwFrcER3YHss2OZUdH80+o0yBYWag5Fq45rFZoFcga41yAoOxTXMVwWuYoM0pSgUpSgUpSgUpSgUpSgUrhNKqKXYhVUEknQAAZJPpWj3X3wtNoBzbSFjGcMrAq2PlfhOvCeh+hwdKDf5rgz1wZ6893dJGjSyMFRFLMx5KqjJJ9hmgr/ts3m7m1FlGfvLkePzWEaN/WfD6jj8q0G40S7K2TNteVQZpxwwKeqk/dj2Zhxn8iKelRmyhk25tks3EEduJv93bpgBeehxwjT5pCfOth2qbaN3epYW4zFbkRIiYw0xwhC/w6RjyPF51Ry7JN32vL1r2bxrC3eFm/eTseJc+xy59eHzq9aje6mzRaWiWcHCzrnvZde7Ep+PkcuQdAoOgUAldM9W+jpa2M0/F9/wAPDHKSO8EjeFSnkFyW4VGMBsg5OYJM0yhghZQzclJGTjngczXOvl+S5fiLuSZCwbvizGQsOR4ycgirJ3R7TiMQ32WHITgeIf8AEUfF/ENfMHnVwWsTXVMgYFWGQelYhmV1DqwZWAZWByCCMgg9QRXKoKm3+7NAWN3aeGQHiwMjUaggjkR0Nd+4naaQws9pHgcaLO2mfSXyP5+R645m0sVCt9ez6G9UunglHIjqaonYNZxVQdlh2tbXv2CaORrYKeIyBikYUEKYXOmCQF7v3OBg1cQqDAFcwKyq1zAoMAVypSgUpSgUpSgUpSgUpSgUrGa4k0HXdRq6MjAMrAqykZBBGCCDzBFUHtzYNzsK8F5aktESQCRnCk6xP1K8teeg661fxrx7SsEmjaKRQysMEGg1e6e80O0IBNEcMMB4yfFG3kfMeR6/qBB+2/eXu4U2fGfFLh5cHlGD4F/mYfoh86je29k3WwrwXVsSYScdSpBOsbjy8j/1rU7AtZttbXaV0Dgv3sqk4RYxgJGTg6YCpoMkZOOZFEq2CP8AY2xHvWGLq7wIgeaggmPT0XilPuBXk7Hd1e/ka9m4uCM8KakF5CPESeZAB18y/oa02+m0JdpbTFvE/ehX7mLohbOHZVHwpkHXU8KAkmr02DspLS2jtY/hjXGerNzZz6sxJ+tB70UKAqgAAYAAwAByAA5Cq37XdgXFyI5osskIb7sfECTq6+ZwAMeQ/Wxia4kZqD5cWYjwuPTPQ+hHQ1t90Yraa7FrcSNGrfBw4HG34Cx5Z6efLmRVpb69n0d0DLDhJTz08L/xDz9ao7bOxpoJCjqyuOan/KnqKo+mtkxrBCkC54EXhUk5IUch64GB7AVsVIPKqc3J7TYlhEN8ZA66CYKXDAcuML4g3qAc4ycHnLLTtO2d3yxAycLc5yhCA9AQfHjnliNPbJAToLXMCkWGAIIIIyCNQQeRB616FSoOtUrtVK5AVmgUpSgUpSgUpSgUpSgUrFYJoMk1xzWCaxQZzWKUoFYpWC1B49q7OjnjaKRQysMEGqF3n2FdbHuGltpHWKRWQSL+Fhgo/tzB5g+tfQZNeHa2zI7iJopVDKwwQaCpuwrYqMZb5scUZ7lE0yhIBZyOmRhR/PVwVRG09n3Wwr0TwniiY4Gc8Mic+6k9fJuh/vcO7O8MN9AJ4T6Oh+KN+qsPP15EairRtqzigFcwtQceGtJvNutBex8Mi+IfC4+JT6Gt+FrsWOg+ftodl16JuBI+8XOkisi6Z+biOmnlmpruv2SRxgNdvxn/AEkJC/zOfE3sOH61aASuVNHXBCqKEUBVUAADQADQAV2UpQZpSlApSlApSlApSlBjNYJoa40Gc1ilYoFKUoMVgmjVwNBktXGlKBSlKDwbZ2VFcxNDKoZWGCD/AJHrVHbRt7rYF8JYjxRvoM/DKnPu38mGpDcx+oP0Aa028uxobu3eGdOJcEg9VI5FT0NB1bn7zw7RtxNDow0kjJy0beR8wejdf1AkKJUN7K934bW1Zo+ItI2WZiCTw5CjQAADJ6dTU5FBxC1yoKzQYpWaxQKUrFBms1xrlQKUpQKUpQKUpQf/2Q=="
+                            alt="Class Image" class="rounded-full w-20 h-20 mx-auto mb-4">
+                    </a>
                     <h2 class="text-2xl">Piano Classes</h2>
                     <p class="mt-2">Master the piano with lessons in classical and contemporary styles.</p>
                 </div>
                 <div class="border p-5 rounded-[1vw] m-6 bg-gray-300 drop-shadow-2xl music">
+                    <!-- Modal toggle -->
+                    <a data-modal-target="modal-3" data-modal-toggle="modal-3">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="Class Image" class="rounded-full w-20 h-20 mx-auto mb-4">
+                    </a>
+
                     <h2 class="text-2xl">Violin Classes</h2>
                     <p class="mt-2">Explore the beauty of violin music with our comprehensive courses.</p>
                 </div>
                 <div class="border p-5 rounded-[1vw] m-6 bg-gray-300 drop-shadow-2xl music">
+                    <!-- Modal toggle -->
+                    <a data-modal-target="modal-4" data-modal-toggle="modal-4">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="Class Image" class="rounded-full w-20 h-20 mx-auto mb-4">
+                    </a>
+
                     <h2 class="text-2xl">Drum Classes</h2>
                     <p class="mt-2">Get into the rhythm with our dynamic drum classes for all ages.</p>
                 </div>
@@ -225,6 +287,217 @@
         </div>
     </footer>
 
+
+    <!-- Main modal1 -->
+
+    <div id="modal-1" data-modal-backdrop="static" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center md:inset-0 h-[calc(100%-1rem)] max-h-full"
+        style="width: 100%;">
+        <div class="relative p-4" style="width: 50%; height: 50%;">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">
+                <!-- Modal header -->
+                <div
+                    class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                        Guitar
+                    </h3>
+                    <button type="button"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        data-modal-hide="modal-1">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-4 md:p-5 space-y-4">
+                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        The guitar course offers comprehensive lessons for all skill levels, from beginners to advanced
+                        players. Each class has a duration of 45 minutes, and students can attend either in-person or
+                        virtually.
+                    </p>
+                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        The course structure includes various guitar techniques, music theory, and practical playing
+                        exercises to help students master the instrument. Recorded video lessons are available for
+                        students who wish to review content or catch up on missed classes. The course starts every
+                        month, with flexible timings to accommodate students' schedules, and the fee for the course is
+                        $200 per month, which includes access to recorded lessons and live sessions.
+                    </p>
+                </div>
+                <!-- Modal footer -->
+                <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                    <button data-modal-hide="modal-1" type="button"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I
+                        accept</button>
+                    <button data-modal-hide="modal-1" type="button"
+                        class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Decline</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main modal2 -->
+    <div id="modal-2" data-modal-backdrop="static" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center md:inset-0 h-[calc(100%-1rem)] max-h-full"
+        style="width: 100%;">
+        <div class="relative p-4" style="width: 50%; height: 50%;">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">
+                <!-- Modal header -->
+                <div
+                    class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                        Piano
+                    </h3>
+                    <button type="button"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        data-modal-hide="modal-2">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-4 md:p-5 space-y-4">
+                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        The piano course is designed to cater to all levels, from beginners to advanced players. Each
+                        class
+                        lasts for 45 minutes, and students can attend in-person or virtually.
+                    </p>
+                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        The course covers a variety of techniques, music theory, and practical exercises to help
+                        students
+                        improve their skills. Recorded video lessons are provided for those who want to review content
+                        or
+                        catch up on missed sessions. The course begins every month, and it is flexible in terms of
+                        timing
+                        to suit students' availability. The fee for the course is $200 per month, which includes access
+                        to
+                        recorded lessons and live sessions.
+                    </p>
+                </div>
+                <!-- Modal footer -->
+                <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                    <button data-modal-hide="modal-2" type="button"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I
+                        accept</button>
+                    <button data-modal-hide="modal-2" type="button"
+                        class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Decline</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main modal3 -->
+    <div id="modal-3" data-modal-backdrop="static" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center md:inset-0 h-[calc(100%-1rem)] max-h-full"
+        style="width: 100%;">
+        <div class="relative p-4" style="width: 50%; height: 50%;">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">
+                <!-- Modal header -->
+                <div
+                    class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                        Violin
+                    </h3>
+                    <button type="button"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        data-modal-hide="modal-3">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-4 md:p-5 space-y-4">
+                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        The violin course is tailored to students of all levels, from beginners to advanced players.
+                        Each
+                        class is 45 minutes long, and students can participate in-person or virtually.
+                    </p>
+                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        The course covers various violin techniques, music theory, and performance skills to help
+                        students
+                        improve their abilities. Recorded video lessons are available for students who wish to review
+                        content or catch up on missed classes. The course starts every month, with flexible scheduling
+                        to
+                        accommodate students' needs. The fee for the course is $200 per month, which includes both live
+                        lessons and access to recorded videos.
+                    </p>
+                </div>
+                <!-- Modal footer -->
+                <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                    <button data-modal-hide="modal-3" type="button"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I
+                        accept</button>
+                    <button data-modal-hide="modal-3" type="button"
+                        class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Decline</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main modal4 -->
+    <div id="modal-4" data-modal-backdrop="static" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center md:inset-0 h-[calc(100%-1rem)] max-h-full"
+        style="width: 100%;">
+        <div class="relative p-4" style="width: 50%; height: 50%;">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">
+                <!-- Modal header -->
+                <div
+                    class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                        Drums
+                    </h3>
+                    <button type="button"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        data-modal-hide="modal-4">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-4 md:p-5 space-y-4">
+                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        The drums course is designed for students of all skill levels. Whether you're a beginner or an
+                        advanced player, each class lasts 45 minutes, and students have the option to attend in-person
+                        or
+                        virtually.
+                    </p>
+                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        The course includes lessons on various drumming techniques, rhythms, and music theory, ensuring
+                        students develop both the technical skills and musicality required for drumming. Recorded video
+                        lessons are provided for those who wish to review or catch up. The course begins every month,
+                        with
+                        flexible timing to suit students' schedules. The fee for the course is $200 per month, which
+                        covers
+                        both live lessons and access to recorded content.
+                    </p>
+                </div>
+                <!-- Modal footer -->
+                <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                    <button data-modal-hide="modal-4" type="button"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I
+                        accept</button>
+                    <button data-modal-hide="modal-4" type="button"
+                        class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Decline</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
